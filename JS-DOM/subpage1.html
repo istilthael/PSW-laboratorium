@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Basic user data</title>
+    <meta name="description" content="Form 1">
+    <meta name="keywords" content="HTML,POLL">
+    <meta name="author" content="D">
+    <script src="poll.js">
+
+    </script>
+
+  </head>
+  <body>
+
+    <nav>
+      <a href="index.html">Back to the main page</a>
+    </nav>
+    <hr><br>
+    <section>
+
+        <form style="width:300px" onclick="changeStyle()">
+          <fieldset>
+              <legend>Select a page style</legend>
+
+              <div>
+                  <input type="radio" id="default"
+                         name="drone" value="default" checked />
+                  <label for="huey">Default</label>
+              </div>
+
+              <div>
+                  <input type="radio" id="fancy"
+                         name="drone" value="fancy" />
+                  <label for="dewey">Fancy</label>
+              </div>
+
+              <div>
+                  <input type="radio" id="bright"
+                         name="drone" value="bright" />
+                  <label for="louie">Bright</label>
+              </div>
+
+          </fieldset>
+      </form>
+
+      <h2>Basic user form</h2><br>
+      <form autocomplete="on" method="get" onsubmit="return confirm_submit();">
+
+        First name:<br>
+
+        <input type="text" name="firstname" autofocus onkeypress="uniCharCode(event)">
+        Format: [A-Za-z]<br><span id="text1"></span><br><br>
+
+
+        Last name:<br>
+        <input type="text" onfocus="myFocus()" onblur="myBlur()" name="lastname" required>
+        Allowed characters: [A-Za-z]<br><br>
+
+        Month of birth:<br>
+        <input list="months" name="birthmonth"> Choose a month from the list <br><br>
+
+        Email address:<br>
+        <input type="email" name="address" required> Format: x@y.z<br><br>
+
+        Phone number:<br>
+        <input type="tel" name="number" pattern="[0-9]{9}"> Enter 9 digits<br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="RESET" onclick="return confirm_reset();">
+
+        <datalist id="months">
+          <option value="January">
+          <option value="February">
+          <option value="March">
+          <option value="April">
+          <option value="May">
+          <option value="June">
+          <option value="July">
+          <option value="August">
+          <option value="September">
+          <option value="October">
+          <option value="November">
+          <option value="December">
+        </datalist>
+
+      </form>
+    </section>
+  </body>
+</html>

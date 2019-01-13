@@ -1,0 +1,27 @@
+
+section > img, section > button, section a {
+    width: 100%;
+    display: inline-flex;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  width: 630px;
+  margin-bottom: 20px;
+  border: 1px solid red;
+}
+
+#main > section {
+  flex: 1 1 auto;
+  width:200px;
+
+}
+
+#main > section:hover {
+  width:300px
+}
+
+#test {
+  width:300px;
+}
