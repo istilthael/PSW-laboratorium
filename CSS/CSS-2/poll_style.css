@@ -1,0 +1,5 @@
+input[type=checkbox]:checked {margin-left:20px;}
+input:disabled {
+    background: #aadddd;
+}
+input:enabled   {background: #dddddd;}

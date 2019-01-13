@@ -1,0 +1,63 @@
+#header1  {text-shadow: 2px 2px #cccccc;
+            background-color: hsla(120,100%,75%,0.3);
+          width: 50%;
+          padding:15px;}
+#blok1    {border: 2px solid red;
+            width: 50%;
+            padding:10px;
+            background-color:rgba(0,0,255,0.2);
+            border-radius: 25px;}
+
+#blok2      {box-shadow: 15px 10px #888888;
+            padding:20px;
+            width: 50%;
+            border: 2px solid black;
+
+            }
+
+#blok3      {
+            padding:20px;
+            width: 50%;
+            background-image: linear-gradient(to right,lightblue, yellow);
+            }
+
+#blok4      {
+            padding:20px;
+            width: 50%;
+            border-width: 20px;
+            border-style: solid;
+            border-image-source: url("cover1.jpg");
+            border-image-slice: 20%;
+            border-image-repeat: repeat;
+            background-image: radial-gradient(circle, red, gray, navy);
+            }
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* The element to apply the animation to */
+#blok5 {
+    width: 50%;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@media only screen and (min-width: 600px) {
+  #blok6 {
+      column-count: 3;
+      column-gap: 20px;
+      column-rule:1px solid lightblue;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #blok6 {
+      column-count: 2;
+      column-gap: 20px;
+      column-rule:1px solid lightblue;
+  }
+}

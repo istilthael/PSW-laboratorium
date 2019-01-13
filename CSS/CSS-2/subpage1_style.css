@@ -1,0 +1,21 @@
+body  {background-image: url("bg2.jpg");
+        background-repeat: no-repeat;
+      background-position: center;
+    background-attachment: fixed;}
+
+
+a:link {
+    color: #CC0000;
+}
+
+a:visited {
+    color: #00CC00;
+}
+
+a:hover {
+    color: #CCCCCC;
+}
+
+a:active {
+    color: #0000FF;
+}

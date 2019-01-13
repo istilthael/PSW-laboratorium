@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Basic user data</title>
+    <meta name="description" content="Form 1">
+    <meta name="keywords" content="HTML,POLL">
+    <meta name="author" content="D">
+
+  </head>
+  <body>
+
+    <nav>
+      <a href="main.html">Back to the main page</a>
+    </nav>
+    <hr><br>
+    <section>
+
+      <h2>Basic user form</h2><br>
+      <form autocomplete="on">
+
+        First name:<br>
+        <input type="text" name="firstname" autofocus> Format: [A-Za-z]<br><br>
+
+        Last name:<br>
+        <input type="text" name="lastname" required> Allowed characters: [A-Za-z]<br><br>
+
+        Month of birth:<br>
+        <input list="months" name="birthmonth"> Choose a month from the list <br><br>
+
+        Email address:<br>
+        <input type="email" name="address" required> Format: x@y.z<br><br>
+
+        Phone number:<br>
+        <input type="tel" name="number" pattern="[0-9]{9}"> Enter 9 digits<br><br>
+
+        <input type="submit" value="Submit"> <input type="reset" value="RESET">
+
+        <datalist id="months">
+          <option value="January">
+          <option value="February">
+          <option value="March">
+          <option value="April">
+          <option value="May">
+          <option value="June">
+          <option value="July">
+          <option value="August">
+          <option value="September">
+          <option value="October">
+          <option value="November">
+          <option value="December">
+        </datalist>
+
+      </form>
+    </section>
+  </body>
+</html>
